@@ -80,6 +80,8 @@ declare interface RNNDrawerOptions {
   disableDragging?: boolean;
 
   disableSwiping?: boolean;
+  
+  disablePanResponder?: boolean;
 }
 
 export enum DirectionType {
@@ -117,6 +119,7 @@ interface IProps {
   animateDrawerExpanding?: boolean;
   disableDragging?: boolean;
   disableSwiping?: boolean;
+  disablePanResponder?: boolean;
   style: any;
 }
 
@@ -186,6 +189,7 @@ class RNNDrawer {
         animateDrawerExpanding: true,
         disableDragging: false,
         disableSwiping: false,
+        disablePanResponder: false,
       };
 
       /**
